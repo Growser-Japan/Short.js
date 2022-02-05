@@ -1,0 +1,615 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Quicksands, sans-serif;
+}
+@media screen and (min-width: 959px) {
+    .View {
+        position:relative;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+    }
+
+    .default-Button { 
+        position: absolute;
+        border: none;
+        background-color: #4287f5;
+        color:#fff;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    .default-Button:active { 
+        color: #fff;
+        animation: ButtonClickAnimation .3s ease 0s forwards;
+    }
+
+    .default-text {
+        position: absolute;
+        border: none;
+        border: solid 1px #d0d0d0;
+        border-radius: 5px;
+    }
+
+    .default-table {
+        position: absolute;
+        width: 500px;
+        height: 250px;
+        border-collapse: collapse;
+    }
+
+    .default-table td {
+        border: solid 1px #d0d0d0;
+    }
+
+    .default-menu-left{
+        position: relative;
+        padding-top: 5vh;
+        top: 0;
+        width: 20%;
+        height: 95vh;
+        border-right: solid 1px #f0f0f0;
+    }
+
+    .default-menu-float {
+        position: absolute;
+        width: 30%;
+        height: 60%;
+        left: 35%;
+        top: 10%;
+        box-shadow: 0 0 5px 5px #d0d0d0;
+        border-radius: 20px;
+        overflow-y: scroll;
+        background-color: #fff;
+    }
+
+    .default-menu-float::-webkit-scrollbar {
+        display: none;
+    }
+    .default-menu-float .default-close-button {
+        margin-left: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        cursor: pointer;
+        color: #4287f5;
+    }
+
+    .default-menu-float .default-close-button:active {
+        animation: ButtonClickAnimation .3s ease 0s forwards;
+    }
+    .default-label {
+        position: absolute;
+    }
+
+
+    .default-menu-left table,
+    .default-menu-float table {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .default-menu-item {
+        border-radius: 20px;
+        padding: 10px 5px;
+        margin: 10px auto;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .default-menu-item:hover {
+        animation: MenuhoverAnimation .3s ease 0s forwards;
+    }
+
+    .default-frame {
+        position: relative;
+    }
+
+    .default-dialog {
+        position: absolute;
+        width: 30%;
+        height: 60%;
+        left: 35%;
+        top: 10%;
+        box-shadow: 0 0 5px 5px #d0d0d0;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .default-dialog .default-close-button {
+        margin-left: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        cursor: pointer;
+        color: #4287f5;
+    }
+
+    .default-TextEditor {
+        position: absolute;
+        resize: none;
+        border: none;
+        border: solid 1px #d0d0d0;
+        border-radius: 5px;
+
+    }
+    .default-list-screen {
+        position: absolute;
+    }
+    .go-menu {
+        display: none;
+    }
+
+    .default-list-screen {
+        position: absolute;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: solid 1px #d0d0d0;
+    }
+    .list-title {
+        position: sticky;
+        top: 0;
+        background-color: #f0f0f0;
+    }
+    .default-list {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    .default-list td {
+        width: 25%;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    .default-list .list-item {
+        cursor: pointer;
+    }
+    .default-list .list-item:active {
+        color: #fff;
+        background-color: #4287f5;
+    }
+    .default-loading-screen {
+        position: absolute;
+        width: 30%;
+        height: 250px;
+        left: 35%;
+        top: 20%;
+        background-color: #fff;
+        z-index: 9999;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 5px #d0d0d0;
+        text-align: center;
+        line-height: 250px;
+    }
+
+    .default-loading-view {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid #f0f0f0;
+        border-top-color: #4287f5;
+        animation: rotate 1s linear infinite;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    @keyframes MenuhoverAnimation {
+        0% {
+            background-color: transparent;
+        }
+        100% {
+            background-color: #f0f0f0;
+        }
+    }
+
+    @keyframes ButtonClickAnimation {
+        0% {
+            
+        }
+        50%{
+            color: transparent;
+        }
+        100% {
+          
+        }
+        
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .View {
+        position:relative;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+    }
+
+    .default-Button { 
+        position: absolute;
+        padding: 5px 10px;
+        border: none;
+        background-color: #4287f5;
+        color:#fff;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .default-label {
+        position: absolute;
+    }
+    .default-Button:active { 
+        color: #fff;
+        animation: ButtonClickAnimation .3s ease 0s forwards;
+    }
+
+    .default-text {
+        position: absolute;
+        border: none;
+        border: solid 1px #d0d0d0;
+        border-radius: 5px;
+    }
+
+    .default-table {
+        position: absolute;
+        width: 500px;
+        height: 250px;
+        border-collapse: collapse;
+    }
+
+    .default-table td {
+        border: solid 1px #d0d0d0;
+    }
+
+    .default-menu-left{
+        position: relative;
+        padding-top: 5vh;
+        top: 0;
+        width: 20%;
+        height: 95vh;
+        border-right: solid 1px #f0f0f0;
+    }
+
+    .default-menu-float {
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        left: 35%;
+        top: 10%;
+        box-shadow: 0 0 5px 5px #d0d0d0;
+        border-radius: 20px;
+        overflow-y: scroll;
+        background-color: #fff;
+    }
+
+    .default-menu-float::-webkit-scrollbar {
+        display: none;
+    }
+    .default-menu-float .default-close-button {
+        margin-left: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        cursor: pointer;
+        color: #4287f5;
+    }
+
+    .default-menu-float .default-close-button:active {
+        animation: ButtonClickAnimation .3s ease 0s forwards;
+    }
+
+
+    .default-menu-left table,
+    .default-menu-float table {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .default-menu-item {
+        border-radius: 20px;
+        padding: 10px 5px;
+        margin: 10px auto;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .default-menu-item:hover {
+        animation: MenuhoverAnimation .3s ease 0s forwards;
+    }
+
+    .default-frame {
+        position: relative;
+    }
+
+    .default-dialog {
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        left: 35%;
+        top: 10%;
+        box-shadow: 0 0 5px 5px #d0d0d0;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .default-dialog .default-close-button {
+        margin-left: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        cursor: pointer;
+        color: #4287f5;
+    }
+    .go-menu {
+        display: none;
+    }
+
+    @keyframes MenuhoverAnimation {
+        0% {
+            background-color: transparent;
+        }
+        100% {
+            background-color: #f0f0f0;
+        }
+    }
+
+    @keyframes ButtonClickAnimation {
+        0% {
+            
+        }
+        50%{
+            color: transparent;
+        }
+        100% {
+          
+        }
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .View {
+        position:relative;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        overflow-y: hidden;
+    }
+
+    
+
+    html {
+        overflow: hidden;
+        overscroll-behavior: none;
+    }
+    body {
+        overflow-y: hidden;
+        overscroll-behavior: contain;
+    }
+
+
+
+    .default-Button { 
+        position: absolute;
+        padding: 5px 10px;
+        border: none;
+        background-color: #4287f5;
+        color:#fff;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .default-label {
+        position: absolute;
+    }
+
+    .default-Button:active { 
+        color: #fff;
+        animation: ButtonClickAnimation .3s ease 0s forwards;
+    }
+
+    .default-text {
+        position: absolute;
+        border: none;
+        border: solid 1px #d0d0d0;
+        border-radius: 5px;
+    }
+
+    .default-table {
+        position: absolute;
+        width: 500px;
+        height: 250px;
+        border-collapse: collapse;
+    }
+
+    .default-table td {
+        border: solid 1px #d0d0d0;
+    }
+
+    .default-menu-left{
+        position: relative;
+        padding-top: 5vh;
+        top: 0;
+        width: 70%;
+        height: 95vh;
+        border-right: solid 1px #f0f0f0;
+        transform: translateX(-100%);
+        z-index: 900;
+        background-color: #fff;
+        transition: .5s;
+    }
+
+    .default-menu-active {
+        transform: translateX(0);
+    }
+
+    .default-menu-float {
+        position: absolute;
+        width: 70%;
+        height: 60%;
+        left: 15%;
+        top: 10%;
+        box-shadow: 0 0 5px 5px #d0d0d0;
+        border-radius: 20px;
+        overflow-y: scroll;
+        background-color: #fff;
+    }
+
+    .default-menu-float::-webkit-scrollbar {
+        display: none;
+    }
+    .default-menu-float .default-close-button {
+        margin-left: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        cursor: pointer;
+        color: #4287f5;
+    }
+
+    .default-menu-float .default-close-button:active {
+        animation: ButtonClickAnimation .3s ease 0s forwards;
+    }
+
+
+    .default-menu-left table,
+    .default-menu-float table {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .default-menu-item {
+        border-radius: 20px;
+        padding: 10px 5px;
+        margin: 10px auto;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .default-menu-item:hover {
+        animation: MenuhoverAnimation .3s ease 0s forwards;
+    }
+
+    .default-frame {
+        position: relative;
+    }
+
+    .default-dialog {
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        left: 15%;
+        top: 10%;
+        box-shadow: 0 0 5px 5px #d0d0d0;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .default-dialog .default-close-button {
+        margin-left: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        cursor: pointer;
+        color: #4287f5;
+    }
+    #menu-check:checked  .default-menu-left {
+        transform: translateX(0%);
+    }
+
+    .mobile-menu-btn{
+        position: absolute;/*ボタン内側の基点となるためrelativeを指定*/
+        background:#d0d0d0;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+        top: 10px;
+        left:  10px;
+        border-radius: 5px;
+        z-index: 1000;
+        display: block;
+      }
+      
+      /*ボタン内側*/
+      .mobile-menu-btn span{
+          display: inline-block;
+          transition: all .4s;/*アニメーションの設定*/
+          position: absolute;
+          left: 14px;
+          height: 3px;
+          border-radius: 2px;
+          background: #fff;
+          width: 45%;
+        }
+      
+      .mobile-menu-btn span:nth-of-type(1) {
+        top:15px; 
+      }
+      
+      .mobile-menu-btn span:nth-of-type(2) {
+        top:23px;
+      }
+      
+      .mobile-menu-btn span:nth-of-type(3) {
+        top:31px;
+      }
+      
+      /*activeクラスが付与されると線が回転して×に*/
+      
+      .mobile-menu-btn.active span:nth-of-type(1) {
+          top: 18px;
+          left: 18px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 30%;
+      }
+      
+      .mobile-menu-btn.active span:nth-of-type(2) {
+        opacity: 0;/*真ん中の線は透過*/
+      }
+      
+      .mobile-menu-btn.active span:nth-of-type(3){
+          top: 30px;
+          left: 18px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30%;
+      }
+
+    @keyframes MenuhoverAnimation {
+        0% {
+            background-color: transparent;
+        }
+        100% {
+            background-color: #f0f0f0;
+        }
+    }
+
+    @keyframes ButtonClickAnimation {
+        0% {
+            
+        }
+        50%{
+            color: transparent;
+        }
+        100% {
+          
+        }
+        
+    }
+}
